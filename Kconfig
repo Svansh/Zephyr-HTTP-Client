@@ -1,0 +1,19 @@
+mainmenu "HTTP client application"
+
+menu "Wi-Fi settings"
+
+config APP_WIFI_SSID
+	string "Wi-Fi SSID"
+	default ""
+	help
+	  Name of the Wi-Fi network to connect to.
+
+config APP_WIFI_PASSWORD
+	string "Wi-Fi password"
+	default ""
+	help
+	  WPA2-PSK passphrase. Compiled into the firmware image.
+
+endmenu
+
+source "Kconfig.zephyr"
